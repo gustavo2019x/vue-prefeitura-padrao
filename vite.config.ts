@@ -21,7 +21,7 @@ export default defineConfig({
       },
     }),
   ],
-  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }, dedupe: ['vue'], },
+  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }, dedupe: ['vue'], preserveSymlinks: true  },
   build: {
     cssCodeSplit: false,
     lib: {
