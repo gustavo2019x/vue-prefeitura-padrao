@@ -35,10 +35,10 @@ export default defineConfig({
       fileName: (format) => (format === "es" ? "index.js" : "index.umd.js"),
     },
     rollupOptions: {
-      external: ["vue", "cpf-cnpj-validator"],
+      external: [ "cpf-cnpj-validator"],
       output: {
         globals: {
-          vue: "Vue",
+          // vue: "Vue",
           'cpf-cnpj-validator': "cpfCnpjValidator"
         },
       },
