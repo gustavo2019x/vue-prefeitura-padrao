@@ -21,6 +21,7 @@ function gerar() {
       <div> {{ textoHeader }}</div>
       <button class="text-white h-8 bg-green-900 p-1 w-40" @click="gerar"> {{ cpnj_ }}</button>
     </header>
+    <slot></slot>
     <footer class="bg-blue-700 h-10 w-full">
       {{ textoFooter }}
     </footer>
