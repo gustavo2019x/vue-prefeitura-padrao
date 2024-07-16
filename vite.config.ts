@@ -31,12 +31,11 @@ export default defineConfig({
       fileName: (format) => (format === "es" ? "index.js" : "index.umd.js"),
     },
     rollupOptions: {
-      external: ["vue", "cpf-cnpj-validator"],
+      external: ["vue"],
 
       output: {
         globals: {
-          vue: "Vue",
-          'cpf-cnpj-validator': "cpfCnpjValidator"
+          vue: "Vue"
         },
       },
     },

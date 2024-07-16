@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { cnpj } from 'cpf-cnpj-validator';
+//import { cnpj } from 'cpf-cnpj-validator';
 import { withDefaults, defineProps, ref } from 'vue';
 
 // Define as propriedades com valores padrão
@@ -10,7 +10,7 @@ withDefaults(defineProps<{ textoHeader: string, textoFooter: string }>(), {
 
 const cpnj_ = ref(`Gerar CNPJ`)
 function gerar() {
-  cpnj_.value = cnpj.generate()
+  //cpnj_.value = cnpj.generate()
 }
 
 </script>
