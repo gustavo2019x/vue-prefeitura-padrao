@@ -21,11 +21,7 @@ export default defineConfig({
       },
     }),
   ],
-  resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
-  },
+  resolve: { alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) }, dedupe: ['vue'], },
   build: {
     cssCodeSplit: false,
     lib: {
@@ -35,10 +31,10 @@ export default defineConfig({
       fileName: (format) => (format === "es" ? "index.js" : "index.umd.js"),
     },
     rollupOptions: {
-      external: [ "cpf-cnpj-validator"],
+      external: ["vue", "cpf-cnpj-validator"],
       output: {
         globals: {
-          // vue: "Vue",
+          vue: "Vue",
           'cpf-cnpj-validator': "cpfCnpjValidator"
         },
       },
