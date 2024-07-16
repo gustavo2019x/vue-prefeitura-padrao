@@ -32,9 +32,7 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ["vue", "cpf-cnpj-validator"],
-      resolve: {
-        dedupe: ['vue']
-      },
+
       output: {
         globals: {
           vue: "Vue",
