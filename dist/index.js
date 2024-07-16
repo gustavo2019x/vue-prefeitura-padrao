@@ -1834,7 +1834,7 @@ process.env.NODE_ENV !== "production" && es();
 const ts = { class: "bg-blue-700 h-10 w-full text-lg flex items-center justify-between" }, ns = { class: "bg-blue-700 h-10 w-full" }, ss = /* @__PURE__ */ Sr({
   __name: "HeaderPrefeitura",
   props: {
-    textoHeader: { default: "Cabeçalho Padrão Pref" },
+    textoHeader: { default: "Cabeçalho Padrão Pref2.0" },
     textoFooter: { default: "Rodapé Padrão" }
   },
   setup(e) {

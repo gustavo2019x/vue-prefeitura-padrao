@@ -4,7 +4,7 @@ import { withDefaults, defineProps, ref } from 'vue';
 
 // Define as propriedades com valores padrão
 withDefaults(defineProps<{ textoHeader: string, textoFooter: string }>(), {
-  textoHeader: 'Cabeçalho Padrão Pref',
+  textoHeader: 'Cabeçalho Padrão Pref2.0',
   textoFooter: 'Rodapé Padrão'
 });
 
