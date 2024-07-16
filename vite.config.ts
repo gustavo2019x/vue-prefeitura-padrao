@@ -17,7 +17,7 @@ export default defineConfig({
           declaration: true,
           declarationMap: true,
         },
-        exclude: ["vite.config.ts", "main.ts"],
+        exclude: ["vite.config.ts", "main.ts", "node_modules"],
       },
     }),
   ],
